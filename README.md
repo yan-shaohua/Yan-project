@@ -32,10 +32,8 @@
         |——  application-test.properties
         |——  application-prod.properties
         |——  log4j2.xml
-        |——  redisson.yml
-###注解
-    @Component   声明这是一个Spring的组件
-    @Validated   JSR303数据校验
+        |——  redisson.yml  
+        
 
     ElasticSearch
         解析数据：localhost:9090/parse/java
@@ -60,6 +58,6 @@
                     cacheType = CacheType.LOCAL,    //缓存到本地
                     key = "args[0] + args[1] + args[2] ")
 
-    自定义注解 - Aop切面缓存  
+    Aop切面缓存  
         自定义注解 @CustomizedRedisCache  
             @CustomizedRedisCache(cacheName = "模块名", key = " '项目名:模块名:方法名:' + #参数1 +‘-’+ #参数2")
