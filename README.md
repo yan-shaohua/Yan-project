@@ -1,39 +1,4 @@
-<<<<<<< HEAD
 # Yan-project
-=======
-
-###项目结构
-    java
-    |——com.
-        |——annotation   自定义注解
-        |       |—  xxx
-        |——batch    批处理
-        |    |—  xxxJob   线程池
-        |    |—  task   任务
-        |          |—  xxxTask
-        |——config    配置中心
-        |     |—  xxxConfig
-        |——controller
-        |     |—  xxxController
-        |——service
-        |     |—  xxxService
-        |     |—  impl
-        |          |—  xxxRepositoryImpl
-        |——dao
-        |   |—  xxxDatabasesName  --  父接口
-        |   |—  xxxRepository  --  子接口
-        |——entity
-        |     |—  DatabaseName
-        |——utils
-        |     |—  xxxUtils  --  字典类
-    resources
-        |——  application.properties
-        |——  application-dev.properties
-        |——  application-test.properties
-        |——  application-prod.properties
-        |——  log4j2.xml
-        |——  redisson.yml  
-        
 
     ElasticSearch
         解析数据：localhost:9090/parse/java
