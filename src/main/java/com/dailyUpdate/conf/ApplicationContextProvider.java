@@ -1,5 +1,5 @@
 
-package com.unknownproject.conf;
+package com.dailyUpdate.conf;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

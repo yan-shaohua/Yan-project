@@ -1,11 +1,10 @@
-package com.unknownproject.service;
+package com.dailyUpdate.service;
 
 import com.alibaba.fastjson.JSON;
 import com.alicp.jetcache.anno.CacheType;
 import com.alicp.jetcache.anno.Cached;
-import com.unknownproject.annotation.CustomizedRedisCache;
-import com.unknownproject.pojo.DataParse;
-import com.unknownproject.utils.HtmlParseUtil;
+import com.dailyUpdate.pojo.DataParse;
+import com.dailyUpdate.utils.HtmlParseUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.elasticsearch.action.bulk.BulkRequest;

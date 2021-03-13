@@ -174,7 +174,7 @@
 
 							<!-- 生成的manifest中classpath的前缀，因为要把第三方jar放到lib目录下，所以classpath的前缀是lib/ -->
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.unknownproject.StartEsApiApplication</mainClass>
+							<mainClass>com.dailyUpdate.StartEsApiApplication</mainClass>
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 						</manifest>
 					</archive>

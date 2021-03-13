@@ -1,6 +1,6 @@
-package com.unknownproject.controller;
+package com.dailyUpdate.controller;
 
-import com.unknownproject.service.WebPageDataService;
+import com.dailyUpdate.service.WebPageDataService;
 import org.apache.logging.log4j.LogManager;
 
 import org.apache.logging.log4j.Logger;

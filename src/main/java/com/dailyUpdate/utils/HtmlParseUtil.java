@@ -1,6 +1,6 @@
-package com.unknownproject.utils;
+package com.dailyUpdate.utils;
 
-import com.unknownproject.pojo.DataParse;
+import com.dailyUpdate.pojo.DataParse;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

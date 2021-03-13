@@ -1,4 +1,4 @@
-package com.unknownproject.conf;
+package com.dailyUpdate.conf;
 
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;

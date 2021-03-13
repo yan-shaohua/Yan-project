@@ -1,6 +1,6 @@
-package com.unknownproject.aspect;
-import com.unknownproject.annotation.CustomizedRedisCache;
-import com.unknownproject.conf.ApplicationContextProvider;
+package com.dailyUpdate.aspect;
+import com.dailyUpdate.annotation.CustomizedRedisCache;
+import com.dailyUpdate.conf.ApplicationContextProvider;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

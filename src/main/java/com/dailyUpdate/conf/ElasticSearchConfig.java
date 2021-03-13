@@ -1,4 +1,4 @@
-package com.unknownproject.conf;
+package com.dailyUpdate.conf;
 
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;

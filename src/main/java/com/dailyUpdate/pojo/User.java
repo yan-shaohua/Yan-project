@@ -1,4 +1,4 @@
-package com.unknownproject.pojo;
+package com.dailyUpdate.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

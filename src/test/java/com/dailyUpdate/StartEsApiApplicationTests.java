@@ -1,10 +1,10 @@
-package com.unknownproject;
+package com.dailyUpdate;
 
 
 
 
 import com.alibaba.fastjson.JSON;
-import com.unknownproject.pojo.User;
+import com.dailyUpdate.pojo.User;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.bulk.BulkResponse;
