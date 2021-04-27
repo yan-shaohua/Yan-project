@@ -113,7 +113,6 @@ public class WebPageDataService {
         sourceBuilder.from(pageNo);
         sourceBuilder.size(pageSize);
 
-
         //关键字高亮
         HighlightBuilder highlightBuilder = new HighlightBuilder();
         highlightBuilder.field("title");

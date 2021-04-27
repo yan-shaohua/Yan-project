@@ -42,7 +42,7 @@ public class CustomizedRedisCacheAspect {
      * 命名切点
      * 定义切点：在带有 @CustomizedRedisCache 的注解时都可以使用
      */
-    @Pointcut(value = "@annotation(com.unknownproject.annotation.CustomizedRedisCache)")
+    @Pointcut("@annotation(com.dailyUpdate.annotation.CustomizedRedisCache)")
     public void redisCache(){
     }
 
@@ -67,7 +67,7 @@ public class CustomizedRedisCacheAspect {
             }
 
             RedissonClient redissonClient = ApplicationContextProvider.getBean(RedissonClient.class);
-            RBucket<Object> rBucket = redissonClient.getBucket(key, CustomRedissonCode.INSTANCE);
+            /*RBucket<Object> rBucket = redissonClient.getBucket(key, CustomRedissonCode.INSTANCE);
             Object value = rBucket.get();
             if (value == null) {
                 //key不存在
@@ -80,7 +80,7 @@ public class CustomizedRedisCacheAspect {
                 rBucket.set(value);
                 rBucket.expire(cache.expireTime(), TimeUnit.SECONDS);
             }
-            return fromStoreValue(value);
+            return fromStoreValue(value);*/
 
         } catch (Exception e) {
             Exception e2 = new Exception("查询不到缓存异常");
@@ -113,6 +113,7 @@ public class CustomizedRedisCacheAspect {
         }
         return storeValue;
     }
+
 
     protected Object toStoreValue(Object userValue){
         if(userValue == null){
