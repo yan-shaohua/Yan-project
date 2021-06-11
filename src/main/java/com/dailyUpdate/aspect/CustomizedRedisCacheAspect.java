@@ -1,3 +1,4 @@
+/*
 package com.dailyUpdate.aspect;
 import com.dailyUpdate.annotation.CustomizedRedisCache;
 import com.dailyUpdate.conf.ApplicationContextProvider;
@@ -18,38 +19,48 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 
+*/
 /**
  * 切面
  * AspectJProxyFactory可以通过解析 @Aspect 标注的类来生成代理aop代理对象
- */
+ *//*
+
 @Aspect
 @Component
 public class CustomizedRedisCacheAspect {
-    /**
+    */
+/**
      * 用于 spEL 表达式解析
-     */
+     *//*
+
     private SpelExpressionParser parser = new SpelExpressionParser();
 
-    /**
+    */
+/**
      * 用于获取方法参数定义名字
-     */
+     *//*
+
     private DefaultParameterNameDiscoverer nameDiscoverer = new DefaultParameterNameDiscoverer();
 
     private boolean allowNullValues = false;
 
 
-    /**
+    */
+/**
      * 命名切点
      * 定义切点：在带有 @CustomizedRedisCache 的注解时都可以使用
-     */
+     *//*
+
     @Pointcut("@annotation(com.dailyUpdate.annotation.CustomizedRedisCache)")
     public void redisCache(){
     }
 
 
-    /**
+    */
+/**
      * 环绕增强，对带注解 @CustomizedRedisCache 的方法进行切面，并获取到注解的属性值
-     */
+     *//*
+
     @Around(value = "redisCache() && @annotation(cache)" , argNames = "joinPoint,cache")   // @annotation(cache) 参数跟下面 cache 对应
     public Object aroundCacheable(ProceedingJoinPoint joinPoint, CustomizedRedisCache cache) throws Throwable {
 
@@ -67,7 +78,8 @@ public class CustomizedRedisCacheAspect {
             }
 
             RedissonClient redissonClient = ApplicationContextProvider.getBean(RedissonClient.class);
-            /*RBucket<Object> rBucket = redissonClient.getBucket(key, CustomRedissonCode.INSTANCE);
+            */
+/*RBucket<Object> rBucket = redissonClient.getBucket(key, CustomRedissonCode.INSTANCE);
             Object value = rBucket.get();
             if (value == null) {
                 //key不存在
@@ -80,7 +92,8 @@ public class CustomizedRedisCacheAspect {
                 rBucket.set(value);
                 rBucket.expire(cache.expireTime(), TimeUnit.SECONDS);
             }
-            return fromStoreValue(value);*/
+            return fromStoreValue(value);*//*
+
 
         } catch (Exception e) {
             Exception e2 = new Exception("查询不到缓存异常");
@@ -125,3 +138,4 @@ public class CustomizedRedisCacheAspect {
 
 
 }
+*/

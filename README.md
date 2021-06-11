@@ -1,8 +1,17 @@
 # Yan-project
 
     ElasticSearch
+        ES服务启动
+        Cercbro可视化
         解析数据：localhost:9090/parse/java
         查询数据：localhost:9090/searchHighlight/java
+        
+
+    Aop切面缓存  
+        自定义注解 @CustomizedRedisCache  
+        例子：@CustomizedRedisCache(cacheName = "模块名", key = " '项目名:模块名:方法名:' + #参数1 +‘-’+ #参数2")
+    Aop切面日志
+        RequestLogAspect
 
 
     jetcache缓存
@@ -23,6 +32,8 @@
                     cacheType = CacheType.LOCAL,    //缓存到本地
                     key = "args[0] + args[1] + args[2] ")
 
-    Aop切面缓存  
-        自定义注解 @CustomizedRedisCache  
-            @CustomizedRedisCache(cacheName = "模块名", key = " '项目名:模块名:方法名:' + #参数1 +‘-’+ #参数2")
+
+
+    
+
+    

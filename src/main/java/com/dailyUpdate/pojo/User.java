@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
-import javax.validation.constraints.Email;
 
 @Data
 @AllArgsConstructor
@@ -16,7 +15,7 @@ import javax.validation.constraints.Email;
 @Validated
 public class User {
 
-    @Email(message = "")
+    //@Email(message = "")
     private String name;
     private int age;
 

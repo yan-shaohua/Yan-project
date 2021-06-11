@@ -4,15 +4,17 @@ import com.alicp.jetcache.anno.config.EnableCreateCacheAnnotation;
 import com.alicp.jetcache.anno.config.EnableMethodCache;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
 
 @SpringBootApplication
 @EnableMethodCache(basePackages="com.unknownproject.service") //开启 Cache注解
 @EnableCreateCacheAnnotation   //启用createCache注解
+@MapperScan("com.dailyUpdate.dao")
 public class StartEsApiApplication implements WebMvcConfigurer {
 
 	private static final Logger logger = LogManager.getLogger(StartEsApiApplication.class);
@@ -25,6 +27,9 @@ public class StartEsApiApplication implements WebMvcConfigurer {
 			logger.info("程序启动使用profile:{}",profile);
 		}
 	}
+
+
+
 
 
 
